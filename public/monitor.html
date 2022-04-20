@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <title>GMS | MONITOR</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <a href="/"><i class="fa-solid fa-arrow-left back"></i></a>
+        <h1>Garbage Monitoring</h1>
+      </div>
+      <div class="piechart-container">
+        <div class="piechart1">
+          <div class="piechart-item">
+            <h3>Plastic : <span class="plastic-val">0</span></h3>
+            <div class="progress-bar plastic" data-color="#23afe3">
+              <div class="value plastic-value">0%</div>
+            </div>
+          </div>
+          <div class="piechart-item">
+            <h3>Metal : <span class="metal-val">0</span></h3>
+            <div class="progress-bar metal" data-color="#a7d212">
+              <div class="value metal-value">0%</div>
+            </div>
+          </div>
+          <div class="piechart-item">
+            <h3>Cardboard : <span class="cardbord-val">0</span></h3>
+            <div class="progress-bar cardbord" data-color="#8536a5 ">
+              <div class="value cardbord-value">0%</div>
+            </div>
+          </div>
+        </div>
+        <div class="piechart2">
+          <div class="piechart-item">
+            <h3>Paper : <span class="paper-val">0</span></h3>
+            <div class="progress-bar paper" data-color="#ff4241">
+              <div class="value paper-value">0%</div>
+            </div>
+          </div>
+          <div class="piechart-item">
+            <h3>Glass : <span class="glass-val">0</span></h3>
+            <div class="progress-bar glass" data-color="#edc214">
+              <div class="value glass-value">0%</div>
+            </div>
+          </div>
+          <div class="piechart-item">
+            <h3>Others : <span class="trash-val">0</span></h3>
+            <div class="progress-bar trash" data-color="#71cbc1">
+              <div class="value trash-value">0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bar-graph-container">
+        <canvas id="barChart" class="myChart"></canvas>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

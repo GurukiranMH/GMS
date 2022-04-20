@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: auto;
+  max-width: 1200px;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+  padding: 0 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  font-weight: 350;
+}
+
+/* .header {
+  position: sticky;
+  background: #fff;
+  
+} */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 30px;
+  padding: 0 0 0 10px;
+}
+
+.nav ul {
+  display: flex;
+  font-size: 17px;
+}
+
+/* main body */
+
+/* top-area */
+
+.top-area {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7rem 5rem;
+  line-height: 50px;
+  background-color: #e3e1df;
+}
+
+.top-area img {
+  border-radius: 10px;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.036),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.054),
+    100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+
+/* middle area */
+
+.middle-area {
+  text-align: center;
+  padding: 3rem 5rem;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.problem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+  line-height: 30px;
+}
+
+.prob-status h2 {
+  padding: 1rem;
+}
+
+.prob-status p {
+  width: 400px;
+  text-align: justify;
+  font-weight: 300;
+}
+
+/* end area */
+.end-area {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+}
+
+.monitor-waste {
+  line-height: 30px;
+}
+
+.waste {
+  padding: 5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.waste p {
+  padding: 1rem 0 0 0;
+  width: 300px;
+  text-align: justify;
+}
+
+.waste img {
+  border-radius: 10px;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024),
+    100px 100px 80px rgba(0, 0, 0, 0.04);
+}
+
+/* footer */
+footer p {
+  text-align: center;
+  font-weight: bold;
+  padding: 3rem 2rem 2rem 2rem;
+}
